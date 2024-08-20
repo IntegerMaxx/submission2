@@ -3,11 +3,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Mengambil dan membaca data dari data set
-top_5_cities = pd.read_csv('top_5_cities.csv')
+top_5_cities = pd.read_csv('dashboard/top_5_cities.csv')
 top_payment_type = pd.read_csv('top_payment_type.csv')
 
 # Mengatur index agar sesuai dengan xlabel
-top_cities = top_5_cities.set_index('customer_city')
+top_cities = top_5_cities.set_index('dashboard/customer_city')
 top_payment = top_payment_type.set_index('payment_type')
 
 # Memberikan keterangan agar data lebih mudah dimengerti
